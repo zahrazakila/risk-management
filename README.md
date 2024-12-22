@@ -92,7 +92,7 @@ Aplikasi Manajemen Risiko berbasis web yang dirancang untuk mengelola, memantau,
 ## Penggunaan
 
 1. **Akses aplikasi**
-   - Buka browser dan akses `http://localhost/risk-management`.
+   - Buka browser dan akses `http://localhost/risk-management/index.html`.
 2. **Login sebagai Admin**
    - Default akun Admin:
      - Username: admin

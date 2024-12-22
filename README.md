@@ -11,6 +11,7 @@ Aplikasi Manajemen Risiko berbasis web yang dirancang untuk mengelola, memantau,
 - [Instalasi dan Konfigurasi](#instalasi-dan-konfigurasi)
 - [Penggunaan](#penggunaan)
 - [Setup Database](#setup-database)
+- [Daftar User dan Password](#daftar-user-dan-password)
 - [Kontributor](#kontributor)
 
 ---
@@ -113,6 +114,33 @@ Aplikasi Manajemen Risiko berbasis web yang dirancang untuk mengelola, memantau,
    USE risk_management;
    SOURCE risk_management_db.sql;
    ```
+
+---
+
+## Daftar User dan Password
+
+- **Admin**  
+  - Username: admin  
+  - Password: admin123  
+
+- **Sub-Admin**  
+  - admin.fadib@uin-suka.ac.id / Password: adminfadib  
+  - admin.fdk@uin-suka.ac.id / Password: adminfdk  
+  - admin.febi@uin-suka.ac.id / Password: adminfebi  
+  - admin.fishum@uin-suka.ac.id / Password: adminfishum  
+  - admin.fitk@uin-suka.ac.id / Password: adminfitk  
+  - admin.fsh@uin-suka.ac.id / Password: adminfsh  
+  - admin.fst@uin-suka.ac.id / Password: adminfst  
+  - admin.fupi@uin-suka.ac.id / Password: adminfupi  
+
+- **User**  
+  - user.fadib@uin-suka.ac.id / Password: userfadib  
+  - user.fdk@uin-suka.ac.id / Password: userfdk  
+  - user.febi@uin-suka.ac.id / Password: userfebi  
+  - user.fishum@uin-suka.ac.id / Password: userfishum  
+  - user.fsh@uin-suka.ac.id / Password: userfsh  
+  - user.fst@uin-suka.ac.id / Password: userfst  
+  - user.fupi@uin-suka.ac.id / Password: userfupi
 
 ---
 

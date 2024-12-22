@@ -1,136 +1,142 @@
-Risk Management Web Application
+# Risk Management Web Application
+
 Aplikasi Manajemen Risiko berbasis web yang dirancang untuk mengelola, memantau, dan melaporkan risiko organisasi atau institusi. Aplikasi ini menggunakan PHP OOP (Object-Oriented Programming) dan MySQL untuk database.
 
-Daftar Isi
-Fitur
-Teknologi yang Digunakan
-Struktur Proyek
-Instalasi dan Konfigurasi
-Penggunaan
-Setup Database
-Kontributor
-Fitur
-Manajemen Pengguna
+---
 
-Tambah, Edit, dan Hapus pengguna.
-Hak akses berbasis role (Admin, Editor, Viewer).
-Identifikasi Risiko
+## Daftar Isi
 
-Input dan kelola data risiko berdasarkan fakultas/departemen.
-Asosiasi risiko dengan mitigasi dan kontrol yang ada.
-Laporan Mitigasi
+- [Fitur](#fitur)
+- [Teknologi yang Digunakan](#teknologi-yang-digunakan)
+- [Instalasi dan Konfigurasi](#instalasi-dan-konfigurasi)
+- [Penggunaan](#penggunaan)
+- [Setup Database](#setup-database)
+- [Kontributor](#kontributor)
 
-Lihat daftar mitigasi yang sedang berjalan atau selesai.
-Update status mitigasi langsung dari dashboard.
-Profil Pengguna
+---
 
-Halaman profil pengguna yang menampilkan informasi personal dan fakultas.
-Teknologi yang Digunakan
-Frontend: HTML, CSS, JavaScript
-Backend: PHP (OOP)
-Database: MySQL
-Server Lokal: Laragon/XAMPP
-Struktur Proyek
-bash
-Copy code
-/risk_management_project
-│
-├── /classes
-│   ├── Database.php         # Koneksi database
-│   ├── UserManager.php      # CRUD untuk manajemen pengguna
-│   ├── ReportManager.php    # Laporan mitigasi dan risiko
-│
-├── /includes
-│   ├── init.php             # Inisialisasi session dan autoload
-│   ├── header.php           # Header HTML
-│
-├── /pages
-│   ├── manage_users.php     # Manajemen pengguna
-│   ├── profile.php          # Halaman profil pengguna
-│   ├── edit_profile.php     # Edit profil pengguna
-│
-├── /public
-│   ├── style.css            # File CSS
-│
-└── /sql
-    ├── risk_management.sql  # File SQL untuk setup database
-│
-└── index.php                # Dashboard utama
-└── README.md                # File dokumentasi
-Instalasi dan Konfigurasi
-1. Clone Proyek
-bash
-Copy code
-git clone https://github.com/username/risk-management
-cd risk-management
-2. Setup Database (Import SQL File)
-Buka phpMyAdmin (atau command line) dan buat database baru:
+## Fitur
 
-sql
-Copy code
-CREATE DATABASE risk_management;
-Import File SQL dari folder /sql:
+1. **Manajemen Pengguna**
 
-Masuk ke phpMyAdmin.
-Pilih database risk_management yang telah dibuat.
-Klik Import.
-Upload file risk_management.sql dari folder /sql.
-Klik Go.
-3. Konfigurasi Koneksi Database
-Edit file Database.php di folder /classes:
+   - Tambah, Edit, dan Hapus pengguna.
+   - Hak akses berbasis role (Admin, Editor, Viewer).
 
-php
-Copy code
-private $host = 'localhost';
-private $dbname = 'risk_management';
-private $username = 'root';
-private $password = '';
-Jika menggunakan Laragon atau XAMPP default, cukup biarkan seperti ini.
+2. **Identifikasi Risiko**
 
-Penggunaan
-1. Jalankan Proyek di Laragon atau XAMPP
-Letakkan folder proyek di dalam direktori www (Laragon) atau htdocs (XAMPP).
-Akses proyek di browser:
-bash
-Copy code
-http://localhost/risk_management_project/
-2. Akses Halaman Manajemen Pengguna
-Login sebagai admin dan akses halaman:
+   - Input dan kelola data risiko berdasarkan fakultas/departemen.
+   - Asosiasi risiko dengan mitigasi dan kontrol yang ada.
 
-bash
-Copy code
-http://localhost/risk_management_project/pages/manage_users.php
-Tambah pengguna baru dengan role (Admin, Editor, Viewer).
+3. **Laporan Mitigasi**
 
-Edit pengguna melalui link "Edit".
+   - Lihat daftar mitigasi yang sedang berjalan atau selesai.
+   - Update status mitigasi langsung dari dashboard.
 
-Hapus pengguna melalui tombol "Delete".
+4. **Profil Pengguna**
 
-3. Lihat Profil Pengguna
-Akses halaman profil pengguna:
-bash
-Copy code
-http://localhost/risk_management_project/pages/profile.php
-Setup Database
-Buka phpMyAdmin atau command line.
+   - Halaman profil pengguna yang menampilkan informasi personal dan fakultas.
 
-Buat database baru:
+5. **Dashboard Interaktif**
 
-sql
-Copy code
-CREATE DATABASE risk_management;
-Import file SQL ke dalam database:
+   - Visualisasi data risiko dalam bentuk grafik dan tabel.
+   - Filter dan cari data berdasarkan kategori dan status.
+     
+6. **Dan Masih Banyak Fitur Lainnya**
 
-Masuk ke tab Import di phpMyAdmin.
-Upload file risk_management.sql dari folder /sql.
-Klik Go untuk menjalankan proses import.
-Pastikan tabel users dan faculties sudah muncul di database setelah proses import selesai.
+---
 
-Kontributor
-Nama Anda (Developer Backend)
-Tim Anda (Frontend/Fullstack)
-Organisasi/Institusi
-Jika ada bug atau saran pengembangan lebih lanjut, jangan ragu untuk menghubungi kami di email@example.com.
+## Teknologi yang Digunakan
 
-Lisensi
-Proyek ini berlisensi di bawah MIT License. Anda bebas menggunakan dan memodifikasi untuk keperluan pribadi dan komersial.
+- **Frontend**: HTML, CSS, JavaScript, Tailwind CSS
+- **Backend**: PHP (OOP)
+- **Database**: MySQL
+- **Server Lokal**: Laragon/XAMPP
+
+---
+
+## Instalasi dan Konfigurasi
+
+1. **Clone repositori**
+
+   ```bash
+   git clone https://github.com/zahrazakila/risk-management.git
+   ```
+
+2. **Masuk ke direktori proyek**
+
+   ```bash
+   cd risk-management
+   ```
+
+3. **Konfigurasi Database**
+
+   - Buat database baru melalui phpMyAdmin atau terminal MySQL.
+   - Import file `risk_management_db.sql` ke dalam database.
+
+4. **Konfigurasi file koneksi**  
+   Edit file `includes/db.php` dan sesuaikan kredensial sesuai database Anda.
+
+5. **Install dependensi tambahan (Tailwind CSS)**
+   ```bash
+   npm install
+   npm run build
+   ```
+
+6. **Jalankan di server lokal**
+
+   - Gunakan Laragon atau XAMPP, letakkan proyek di folder `www` atau `htdocs`.
+
+---
+
+## Penggunaan
+
+1. **Akses aplikasi**
+   - Buka browser dan akses `http://localhost/risk-management`.
+2. **Login sebagai Admin**
+   - Default akun Admin:
+     - Username: admin
+     - Password: admin123
+3. **Mulai tambahkan data risiko dan mitigasi**
+   - Gunakan menu navigasi untuk menambah pengguna, risiko, dan laporan.
+   - Gunakan dashboard interaktif untuk memantau risiko secara real-time.
+
+---
+
+## Setup Database
+
+1. **Buat database**
+   ```sql
+   CREATE DATABASE risk_management;
+   ```
+2. **Import file SQL**
+   ```sql
+   USE risk_management;
+   SOURCE risk_management_db.sql;
+   ```
+
+---
+
+## Kontributor
+
+- **Zahra Zakila A. R.**  
+  - Fullstack Developer  
+  - 23106050019@student@uin-suka.ac.id
+
+- **Nadine Riskia W. P.**  
+  - Testing & Documentation  
+  - 23106050022@student@uin-suka.ac.id
+
+- **Ara Rosalia S.**  
+  - Testing & Front-end  
+  - 23106050021@student@uin-suka.ac.id
+
+- **Nayy**  
+  - UI/UX  
+  - 23106050065@student@uin-suka.ac.id
+
+- **Zaza**  
+  - UI/UX & Front-end   
+  - 23106050030@student@uin-suka.ac.id
+
+
+

@@ -1,0 +1,86 @@
+/* Palette Colors */
+.bg-darkest-green {
+    background-color: #051F20 !important;
+  }
+  
+  .bg-darker-green {
+    background-color: #0B2B26 !important;
+  }
+  
+  .bg-dark-green {
+    background-color: #163832 !important;
+  }
+  
+  .bg-medium-green {
+    background-color: #235347 !important;
+  }
+  
+  .bg-light-green {
+    background-color: #8EB69B !important;
+  }
+  
+  .bg-lightest-green {
+    background-color: #DAF1DE !important;
+  }
+
+  .bg-beige {
+    background-color: #fffefa !important;
+  }
+
+  .bg-dark-beige {
+    background-color: #fffaed !important;
+  }
+ 
+  .bg-beige-green {
+    background-color:  #ddede2 !important;
+  }
+  /* Text Colors */
+  .text-darkest-green {
+    color: #051F20;
+  }
+  
+  .text-darker-green {
+    color: #0B2B26;
+  }
+  
+  .text-dark-green {
+    color: #163832;
+  }
+  
+  .text-medium-green {
+    color: #235347;
+  }
+  
+  .text-light-green {
+    color: #8EB69B;
+  }
+  
+  .text-lightest-green {
+    color: #DAF1DE;
+  }
+  
+  /* Border Colors */
+  .border-darkest-green {
+    border-color: #051F20;
+  }
+  
+  .border-darker-green {
+    border-color: #0B2B26;
+  }
+  
+  .border-dark-green {
+    border-color: #163832;
+  }
+  
+  .border-medium-green {
+    border-color: #235347;
+  }
+  
+  .border-light-green {
+    border-color: #8EB69B;
+  }
+  
+  .border-lightest-green {
+    border-color: #DAF1DE;
+  }
+  
